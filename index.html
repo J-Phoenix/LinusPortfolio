@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linus Torvalds - Systems Programmer & Open Source Pioneer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">linus@kernel:~$</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#philosophy" class="nav-link">Philosophy</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-terminal"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello World, I'm</span>
+                        <span class="name">Linus Torvalds</span>
+                        <span class="title">Creator of Linux & Git</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Systems programmer, open-source pioneer, and creator of the Linux kernel. 
+                        Building the foundation of modern computing, one commit at a time.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="https://github.com/torvalds" class="btn btn-secondary">GitHub Profile</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">kernel.c</span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="comment">/* Hello everybody out there using minix */</span>
+<span class="keyword">#include</span> <span class="string">&lt;linux/kernel.h&gt;</span>
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="function">printk</span>(<span class="string">"Linux version 0.01"</span>);
+    <span class="function">printk</span>(<span class="string">"Just a hobby, won't be big"</span>);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a Finnish-American software engineer best known for creating the Linux kernel 
+                        and the Git version control system. What started as a personal project in 1991 
+                        has grown into the foundation of modern computing infrastructure.
+                    </p>
+                    <p>
+                        My philosophy is simple: write good code, be direct in communication, and let 
+                        technical merit speak for itself. I believe in the power of open source and 
+                        collaborative development to solve complex problems.
+                    </p>
+                    <p>
+                        When I'm not maintaining the kernel or reviewing patches, I enjoy diving, 
+                        spending time with my family, and occasionally engaging in spirited technical 
+                        debates on the Linux Kernel Mailing List.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Years of Linux</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3B+</span>
+                            <span class="stat-label">Devices Running Linux</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100M+</span>
+                            <span class="stat-label">Git Repositories</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fab fa-linux"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Major Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3>Linux Kernel</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/torvalds/linux" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://kernel.org" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        The Linux kernel - a free and open-source, monolithic, Unix-like operating system kernel. 
+                        Started as a hobby project in 1991, now powers everything from smartphones to supercomputers.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Assembly</span>
+                        <span class="tech-tag">Shell</span>
+                        <span class="tech-tag">Makefile</span>
+                    </div>
+                    <div class="project-stats">
+                        <span class="stat">30M+ lines of code</span>
+                        <span class="stat">1000+ contributors</span>
+                    </div>
+                </div>
+                
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <h3>Git</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/git/git" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://git-scm.com" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A distributed version control system designed to handle everything from small to very large 
+                        projects with speed and efficiency. Created to manage Linux kernel development.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Shell Script</span>
+                        <span class="tech-tag">Perl</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-stats">
+                        <span class="stat">100M+ users</span>
+                        <span class="stat">Industry standard</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Subsurface</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Subsurface-divelog/subsurface" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://subsurface-divelog.org" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A divelog program that lets you plan and track your dives. 
+                        A personal project combining my love for diving with software development.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Qt</span>
+                        <span class="tech-tag">QML</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>uemacs</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/torvalds/uemacs" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        My personal fork of MicroEMACS, a small Emacs-like editor. 
+                        Simple, fast, and gets the job done without unnecessary complexity.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Terminal</span>
+                        <span class="tech-tag">Unix</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Recognition & Awards</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Turing Award</h3>
+                    <p>ACM's highest honor for contributions to computing science</p>
+                    <span class="achievement-date">2021</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>IEEE Computer Pioneer Award</h3>
+                    <p>For pioneering development of the Linux kernel</p>
+                    <span class="achievement-date">2014</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Millennium Technology Prize</h3>
+                    <p>Finland's most prestigious technology award</p>
+                    <span class="achievement-date">2012</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Honorary Doctorates</h3>
+                    <p>Multiple universities worldwide</p>
+                    <span class="achievement-date">2000-2018</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Time Person of the Year</h3>
+                    <p>Among the most influential people</p>
+                    <span class="achievement-date">2004</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Free Software Foundation Award</h3>
+                    <p>For advancement of free software</p>
+                    <span class="achievement-date">1998</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy">
+        <div class="container">
+            <h2 class="section-title">Development Philosophy</h2>
+            <div class="philosophy-content">
+                <div class="quote-card">
+                    <blockquote>
+                        "Talk is cheap. Show me the code."
+                    </blockquote>
+                    <cite>- On the importance of implementation over discussion</cite>
+                </div>
+                <div class="philosophy-grid">
+                    <div class="philosophy-item">
+                        <h3>Technical Merit</h3>
+                        <p>Decisions should be based on technical excellence, not politics or personalities. The best technical solution wins.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Direct Communication</h3>
+                        <p>Be honest and direct. Criticism of code is not personal - it's about making the software better.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Open Source</h3>
+                        <p>Transparency and collaboration lead to better software. Many eyes make all bugs shallow.</p>
+                    </div>
+                    <div class="philosophy-item">
+                        <h3>Practical Solutions</h3>
+                        <p>Perfect is the enemy of good. Ship working code, then iterate and improve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>
+                        For kernel-related discussions, please use the Linux Kernel Mailing List (LKML). 
+                        For other inquiries, feel free to reach out through the channels below.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>torvalds@linux-foundation.org</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Portland, Oregon, USA</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Linux Foundation Fellow</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/torvalds" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://plus.google.com/+LinusTorvalds" class="social-link">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                        <a href="https://www.kernel.org" class="social-link">
+                            <i class="fab fa-linux"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mailing-list">
+                    <h3>Linux Kernel Mailing List</h3>
+                    <p>The primary communication channel for kernel development</p>
+                    <div class="ml-info">
+                        <div class="ml-item">
+                            <strong>Subscribe:</strong> majordomo@vger.kernel.org
+                        </div>
+                        <div class="ml-item">
+                            <strong>Archives:</strong> lore.kernel.org
+                        </div>
+                        <div class="ml-item">
+                            <strong>Traffic:</strong> ~200 messages/day
+                        </div>
+                    </div>
+                    <p class="ml-note">
+                        <strong>Note:</strong> Please read the kernel documentation and search archives 
+                        before posting. Be prepared for direct feedback!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Linus Torvalds. Linux® is a registered trademark of Linus Torvalds. Built with semantic HTML and zero JavaScript frameworks (as it should be).</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
