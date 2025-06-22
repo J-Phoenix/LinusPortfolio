@@ -61,7 +61,7 @@ linus-portfolio/
 ### Quick Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/linus-portfolio.git
+git clone https://github.com/J-Phoenix/linusPortfolio.git
 
 # Navigate to the project directory
 cd linus-portfolio
